@@ -1,15 +1,17 @@
 import requests
 from bs4 import BeautifulSoup
 
-def songcrawler(band_name):
+def songcrawler(band_name, song_amount  = 0):
     page = requests.get(f"https://www.vagalume.com.br/{band_name}/")
     soup = BeautifulSoup(page.text, 'html.parser')
 
-    song_list = soup.find_all(class_="nameMusic")
+    all_songs = soup.find_all(class_="nameMusic")
 
-    lista = list()
-    for song_name in song_list:
-        song = song_name.contents[0]
-        lista.append(song)
+    songlist = list()
+    for song_name in all_songs:
+        songname = song_name.contents[0]
+        songlist.append(songname)
     
-    return print(lista)
+    for song in songlist:
+        print(song)
+    print(f"Você pediu {song_amount} canções!")
