@@ -5,6 +5,8 @@ from bs4 import BeautifulSoup
 def scraper(*args):
     # Tratamento da string passada como parâmetro:
     band_name = '-'.join(map(str, *args)).lower()
+    band_name_print = ' '.join(map(str, *args)).title()
+
 
     # Scraping:
     page = requests.get(f"https://www.vagalume.com.br/{band_name}/")
@@ -18,7 +20,7 @@ def scraper(*args):
 
     # Print da lista de canções
     song_count = len(songlist)
-    print(f"O artista '{band_name}' possui {song_count} canções.")
+    print(f"O artista '{band_name_print}' possui {song_count} canções.")
 
     prompt = True  # Condição de parada melhor que o break
     while prompt:
@@ -32,3 +34,6 @@ def scraper(*args):
                     prompt = False
         else:
             print("Você precisa selecionar o número de canções para mostrar. \n")
+
+# Chamar uma função nova de interface, num outro arquivo só a função que printa.
+# Nomear melhor as variáveis.
