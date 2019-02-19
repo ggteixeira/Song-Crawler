@@ -3,7 +3,7 @@ from bs4 import BeautifulSoup
 
 
 def songs_finder(artist):
-    artist_name = artist.replace(" ", "-")
+    artist_name = artist.lower().replace(" ", "-")
     content = fetch_page_content(url_for(artist_name))
 
     html = parse_content_to_html(content)
