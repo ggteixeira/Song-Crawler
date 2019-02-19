@@ -10,5 +10,5 @@
 
 * sys.argv
 * map()
+* expressões lambda
 * `if __name__ == "__main__":`
-
