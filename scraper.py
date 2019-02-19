@@ -2,38 +2,27 @@ import requests
 from bs4 import BeautifulSoup
 
 
-def scraper(*args):
-    # Tratamento da string passada como parâmetro:
-    band_name = '-'.join(map(str, *args)).lower()
-    band_name_print = ' '.join(map(str, *args)).title()
+def songs_finder(artist):
+    artist_name = artist.replace(" ", "-")
+    content = fetch_page_content(url_for(artist_name))
+
+    html = parse_content_to_html(content)
+    songs_anchors = find_songs_anchors(html)
+
+    return list(map((lambda anchor: anchor.contents[0]), songs_anchors))
 
 
-    # Scraping:
-    page = requests.get(f"https://www.vagalume.com.br/{band_name}/")
-    soup = BeautifulSoup(page.text, 'html.parser')
-    all_songs = soup.find_all(class_="nameMusic")
+def url_for(artist):
+    return f"https://www.vagalume.com.br/{artist}/"
 
-    songlist = list()
-    for song_name in all_songs:
-        songname = song_name.contents[0]
-        songlist.append(songname)
 
-    # Print da lista de canções
-    song_count = len(songlist)
-    print(f"O artista '{band_name_print}' possui {song_count} canções.")
+def fetch_page_content(url):
+    return requests.get(url)
 
-    prompt = True  # Condição de parada melhor que o break
-    while prompt:
-        num = int(input("Quantas canções você deseja mostrar? \n"))
-        if num > 0:
-            if num > song_count:
-                print("O número excede o total de canções. Tente novamente. \n")
-            else:
-                for song in songlist[:num]:
-                    print(song)
-                    prompt = False
-        else:
-            print("Você precisa selecionar o número de canções para mostrar. \n")
 
-# Chamar uma função nova de interface, num outro arquivo só a função que printa.
-# Nomear melhor as variáveis.
+def parse_content_to_html(content):
+    return BeautifulSoup(content.text, "html.parser")
+
+
+def find_songs_anchors(html):
+    return html.find_all(class_="nameMusic")
