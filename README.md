@@ -4,7 +4,7 @@
 
 ## Começando
 
-![crawler-screenshot](https://github.com/guiemi/SongCrawler/blob/pics/crawler-screenshot)
+![crawler-screenshot](https://github.com/guiemi/SongCrawler/blob/pics/crawler-screenshot.png)
 
 
 
