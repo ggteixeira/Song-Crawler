@@ -6,7 +6,7 @@
 
 * [Instalação](https://github.com/guiemi/song-crawler#instalação)
 
-* [Como ele funciona](https://github.com/guiemi/song-crawler#como-ele-funciona)
+* [Como funciona](https://github.com/guiemi/song-crawler#como-ele-funciona)
 * [Bibliografia](https://github.com/guiemi/song-crawler#bibliografia-usada)
 * [O que eu aprendi](https://github.com/guiemi/song-crawler#o-que-eu-aprendi)
 
@@ -25,17 +25,36 @@
 
 ## Instalação
 
+**Instalação do Python**: SongCrawler é escrito em Python, ou seja, você precisa tê-lo instalado em seu computador. Então, para instalar o Python, sugiro [este](https://docs.python-guide.org/starting/installation/) guia (*The Hitchhiker's Guide to Python*) para Linux, macOS ou Windows.
+
+**Git Clone**: primeiro passo é clonar este repositório na sua máquina através do seguinte comando:
+
+* `git clone https://github.com/guiemi/song-crawler.git`
+
+Após o clone, acesse a pasta principal usando:
+
+* `cd song-crawler`
+
+**Virtual Environment**: É enfaticamente recomendado que você crie e habilite um ***virtual environment*** antes do próximo passo. Se você não conhece ou ainda não sabe como usar, há vários tutoriais na internet, inclusive o guia da documentação oficial do [virtualenv/virtualenvwrapper](virtualenv/virtualenvwrapper). Em Português Brasileiro, recomendo [este](https://pythonacademy.com.br/blog/python-e-virtualenv-como-programar-em-ambientes-virtuais) guia (*Python e Virtualenv: como programar em ambientes virtuais*).
+
+**Instalando os requisitos**: Com seu *virtual environment* ativado, execute o seguinte comando no seu *shell* para instalar os *requirements*:
+
+* `pip install -r requirements.txt`
+
+O `pip install` instala os pacotes necessários à execução do código. A lista completa encontra-se [aqui](https://raw.githubusercontent.com/guiemi/song-crawler/master/requirements.txt).
+
 ## Como ele Funciona
+
+Para 
 
 ## Bibliografia usada: 
 
 * **livro** *[Python 3 Object-Oriented Programming (2nd edition)](https://www.packtpub.com/application-development/python-3-object-oriented-programming-second-edition)* de [Dusty Phillips](https://github.com/dusty-phillips);
 * **tutorial** *[Como fazer scraping em páginas web com Beautiful Soup e Python 3](https://www.digitalocean.com/community/tutorials/como-fazer-scraping-em-paginas-web-com-beautiful-soup-and-python-3-pt)*, escrito por [Lisa Tagliaferri](https://lisatagliaferri.org);
 * **tutorial** [Storing Images and Demos in your Repo](https://gist.github.com/joncardasis/e6494afd538a400722545163eb2e1fa5), escrito por [Jonathan Cardasis](https://gist.github.com/joncardasis);
+* **tutorial** [Manually create a Markdown table of contents for your GitHub README](https://www.setcorrect.com/portfolio/work11/), escrito por [Hillary Fraley](https://github.com/hillaryfraley)
 * **artigo** *[sys.argv - command line arguments in Python [Part 1]](https://www.kerneldev.com/2018/09/01/command-line-arguments-using-python-sys-argv-part1/)*, escrito por [Sapnesh Naik](https://github.com/SapneshNaik);
 * **artigo** [Entendendo as funções lambda no Python](https://medium.com/@otaviobn/entendendo-as-funções-lambda-no-python-cbe3c5abb179), escrito por [Otavio Braga](https://github.com/OtavioBraga);
-
-
 
 
 
@@ -46,3 +65,4 @@
 * expressões lambda
 * `if __name__ == "__main__":`
 * git orphan branches
+* Table of Contents (Markdown)
