@@ -1,26 +1,30 @@
 # SongCrawler 💻
 
-![crawler-screenshot](https://github.com/guiemi/song-crawler/blob/pics/crawler-screenshot.png)
-
 ## Sumário
+
+* Introdução
 
 * [Instalação](https://github.com/guiemi/song-crawler#instalação)
 
-  
+* [Como ele funciona](https://github.com/guiemi/song-crawler#como-ele-funciona)
+* [Bibliografia](https://github.com/guiemi/song-crawler#bibliografia-usada)
+* [O que eu aprendi](https://github.com/guiemi/song-crawler#o-que-eu-aprendi)
+
+
+
+![crawler-screenshot](https://github.com/guiemi/song-crawler/blob/pics/crawler-screenshot.png)
+
+## Introdução
+
 
 **SongCrawler** é um [crawler](https://en.wikipedia.org/wiki/Web_crawler) que tem como propósito listar nomes de canções de artistas. 
 
 * A fonte de dados do crawler é o site de letras [Vagalume](https://www.vagalume.com.br). 
 * O algoritmo é 100% *command-line-based*, o que significa que ele utiliza apenas o shell para rodar.
 
-# 
 ## Instalação
 
 ## Como ele Funciona
-
-
-
-
 
 ## Bibliografia usada: 
 
