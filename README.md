@@ -49,7 +49,9 @@ Para ver a lista de letras de canções do seu artista escolhido, basta utilizar
 
 `python songcrawler.py nome_do_artista`
 
+e o crawler entrará em funcionamento, perguntando, antes de printar a lista, quantas canções você deseja:
 
+![crawler-gif](https://github.com/guiemi/song-crawler/blob/master/crawler-gif.gif)
 
 ## Bibliografia usada
 
