@@ -4,10 +4,9 @@ from bs4 import BeautifulSoup
 
 def songs_finder(artist):
 
-
     # Recebe um nome de artista e trata a string p/ se adequar à URL
     artist_name = artist.lower().replace(" ", "-")
-    
+
     # Recebe o conteúdo bruto de uma página, já com a URL completa
     content = fetch_page_content(url_for(artist_name))
 
@@ -27,7 +26,7 @@ def songs_finder(artist):
 def url_for(artist):
     """Recebe o nome devidamente tratado de um artista
     e retorna sua URL completa, pronta para a raspagem de dados."""
-    
+
     return f"https://www.vagalume.com.br/{artist}/"
 
 
