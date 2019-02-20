@@ -17,7 +17,7 @@
 
 * A fonte de dados do crawler é o site de letras [Vagalume](https://www.vagalume.com.br). 
 
-* O algoritmo é 100% *command-line-based*, o que significa que ele necessita apenas o shell para rodar.
+* O algoritmo é 100% *command-line-based*, o que significa que ele necessita apenas do shell para rodar.
 
   ***
 
@@ -45,11 +45,15 @@ O `pip install` instala os pacotes necessários à execução do código. A list
 
 ## Como ele funciona
 
-Para ver a lista de letras de canções do seu artista escolhido, basta utilizar o seguinte comando:
+Para ver a lista de letras de canções do seu artista escolhido, basta utilizar a seguinte sintaxe:
 
-`python songcrawler.py nome_do_artista`
+```python
+python songcrawler.py nome_do_artista
+```
 
-e o crawler entrará em funcionamento, perguntando, antes de printar a lista, quantas canções você deseja:
+
+
+e então o crawler entrará em funcionamento, perguntando, antes de printar a lista buscada, quantas canções você deseja:
 
 ![crawler-gif](https://github.com/guiemi/song-crawler/blob/master/media/crawler-gif.gif)
 
