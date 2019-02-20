@@ -17,7 +17,7 @@
 
 * A fonte de dados do crawler é o site de letras [Vagalume](https://www.vagalume.com.br). 
 
-* O algoritmo é 100% *command-line-based*, o que significa que ele utiliza apenas o shell para rodar.
+* O algoritmo é 100% *command-line-based*, o que significa que ele necessita apenas o shell para rodar.
 
   ***
 
@@ -25,7 +25,7 @@
 
 ## Instalação
 
-**Instalação do Python**: SongCrawler é escrito em Python, ou seja, você precisa tê-lo instalado em seu computador. Então, para instalar o Python, sugiro [este](https://docs.python-guide.org/starting/installation/) guia (*The Hitchhiker's Guide to Python*) para Linux, macOS ou Windows.
+**Instalação do Python**: SongCrawler é escrito em Python, ou seja, você precisa tê-lo instalado em seu computador. Para tal, sugiro [este](https://docs.python-guide.org/starting/installation/) guia (*The Hitchhiker's Guide to Python*) para Linux, macOS ou Windows.
 
 **Git Clone**: primeiro passo é clonar este repositório na sua máquina através do seguinte comando:
 
@@ -43,11 +43,15 @@ Após o clone, acesse a pasta principal usando:
 
 O `pip install` instala os pacotes necessários à execução do código. A lista completa encontra-se [aqui](https://raw.githubusercontent.com/guiemi/song-crawler/master/requirements.txt).
 
-## Como ele Funciona
+## Como ele funciona
 
-Para 
+Para ver a lista de letras de canções do seu artista escolhido, basta utilizar o seguinte comando:
 
-## Bibliografia usada: 
+`python songcrawler.py nome_do_artista`
+
+
+
+## Bibliografia usada
 
 * **livro** *[Python 3 Object-Oriented Programming (2nd edition)](https://www.packtpub.com/application-development/python-3-object-oriented-programming-second-edition)* de [Dusty Phillips](https://github.com/dusty-phillips);
 * **tutorial** *[Como fazer scraping em páginas web com Beautiful Soup e Python 3](https://www.digitalocean.com/community/tutorials/como-fazer-scraping-em-paginas-web-com-beautiful-soup-and-python-3-pt)*, escrito por [Lisa Tagliaferri](https://lisatagliaferri.org);
@@ -58,7 +62,7 @@ Para
 
 
 
-## O que eu aprendi:
+## O que eu aprendi neste projeto
 
 * sys.argv
 * map()
