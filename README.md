@@ -29,17 +29,17 @@
 
 **Git Clone**: primeiro passo é clonar este repositório na sua máquina através do seguinte comando:
 
-* `git clone https://github.com/guiemi/song-crawler.git`
+`git clone https://github.com/guiemi/song-crawler.git`
 
 Após o clone, acesse a pasta principal usando:
 
-* `cd song-crawler`
+`cd song-crawler`
 
 **Virtual Environment**: É enfaticamente recomendado que você crie e habilite um ***virtual environment*** antes do próximo passo. Se você não conhece ou ainda não sabe como usar, há vários tutoriais na internet, inclusive o guia da documentação oficial do [virtualenv/virtualenvwrapper](virtualenv/virtualenvwrapper). Em Português Brasileiro, recomendo [este](https://pythonacademy.com.br/blog/python-e-virtualenv-como-programar-em-ambientes-virtuais) guia (*Python e Virtualenv: como programar em ambientes virtuais*).
 
 **Instalando os requisitos**: Com seu *virtual environment* ativado, execute o seguinte comando no seu *shell* para instalar os *requirements*:
 
-* `pip install -r requirements.txt`
+`pip install -r requirements.txt`
 
 O `pip install` instala os pacotes necessários à execução do código. A lista completa encontra-se [aqui](https://raw.githubusercontent.com/guiemi/song-crawler/master/requirements.txt).
 
@@ -47,11 +47,13 @@ O `pip install` instala os pacotes necessários à execução do código. A list
 
 Para ver a lista de letras de canções do seu artista escolhido, basta utilizar a seguinte sintaxe:
 
-```python
-python songcrawler.py nome_do_artista
-```
+`songcrawler.py nome_do_artista`
 
+Por exemplo, você pode digitar formatos de nomes como:
 
+`python songcrawler.py Queen`,
+`python songcrawler.py Pearl Jam`,
+`python songcrawler.py Canto dos Malditos na Terra do Nunca`,
 
 e então o crawler entrará em funcionamento, perguntando, antes de printar a lista buscada, quantas canções você deseja:
 
@@ -80,7 +82,10 @@ e então o crawler entrará em funcionamento, perguntando, antes de printar a li
 * sys.argv
 * map()
 * expressões lambda
-* `if __name__ == "__main__":`
+* ```python
+  if __name__ == "__main__":
+  main()
+  ```
 * git orphan branches
 * Table of Contents (Markdown)
 * exclusão de branches remotas
