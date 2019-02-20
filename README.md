@@ -86,8 +86,9 @@ e então o crawler entrará em funcionamento, perguntando, antes de printar a li
 * expressões lambda
 * ```python
   if __name__ == "__main__":
-  main()
+  	main()
   ```
 * git orphan branches
 * Table of Contents (Markdown)
 * exclusão de branches remotas
+
