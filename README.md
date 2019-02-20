@@ -21,7 +21,7 @@
 
   ***
 
-  ![crawler-screenshot](https://github.com/guiemi/song-crawler/blob/pics/crawler-screenshot.png)
+  ![crawler-screenshot](https://github.com/guiemi/song-crawler/blob/master/media/crawler-screenshot.png)
 
 ## Instalação
 
@@ -51,7 +51,7 @@ Para ver a lista de letras de canções do seu artista escolhido, basta utilizar
 
 e o crawler entrará em funcionamento, perguntando, antes de printar a lista, quantas canções você deseja:
 
-![crawler-gif](https://github.com/guiemi/song-crawler/blob/master/crawler-gif.gif)
+![crawler-gif](https://github.com/guiemi/song-crawler/blob/master/media/crawler-gif.gif)
 
 ## Bibliografia usada
 
