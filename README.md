@@ -51,9 +51,11 @@ Para ver a lista de letras de canções do seu artista escolhido, basta utilizar
 
 Por exemplo, você pode digitar formatos de nomes como:
 
-`python songcrawler.py Queen`,
-`python songcrawler.py Pearl Jam`,
-`python songcrawler.py Canto dos Malditos na Terra do Nunca`,
+```python
+$ python songcrawler.py Queen
+$ python songcrawler.py Pearl Jam
+$ python songcrawler.py Canto dos Malditos na Terra do Nunca
+```
 
 e então o crawler entrará em funcionamento, perguntando, antes de printar a lista buscada, quantas canções você deseja:
 
